@@ -16,34 +16,34 @@ const AccountModal = (props) => {
               <div>
                 <div className="accountModal-inner-box-header">
                   <div>신랑 계좌</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="44310101092727" onCopy={()=>alert("복사 완료")}>
+                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="068120823448" onCopy={()=>alert("복사 완료")}>
                 <text>복사</text></CopyToClipboard>
                 </div>
                 <div className="accountModal-inner-box-body">
-                  <div>국민(예금주: 최효철)</div>
-                  <div>44310101092727</div>
+                  <div>부산은행(예금주: 이주홍)</div>
+                  <div>068120823448</div>
                 </div>
               </div>
               <div>
                 <div className="accountModal-inner-box-header">
                   <div>신랑 혼주</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="671210298540" onCopy={()=>alert("복사 완료")}>
+                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="94810101092334" onCopy={()=>alert("복사 완료")}>
                 <text>복사</text></CopyToClipboard>
                 </div>
                 <div className="accountModal-inner-box-body">
-                  <div>경남은행(예금주: 최연수)</div>
-                  <div>671210298540</div>
+                  <div>국민은행(예금주: 이길영)</div>
+                  <div>94810101092334</div>
                 </div>
               </div>
               <div>
                 <div className="accountModal-inner-box-header">
                   <div>신랑 혼주</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="40712348308" onCopy={()=>alert("복사 완료")}>
+                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="273120320273" onCopy={()=>alert("복사 완료")}>
                 <text>복사</text></CopyToClipboard>
                 </div>
                 <div className="accountModal-inner-box-body">
-                  <div>농협(예금주: 문순남)</div>
-                  <div>40712348308</div>
+                  <div>부산은행(예금주: 임미숙)</div>
+                  <div>273120320273</div>
                 </div>
               </div>
             </div>}
@@ -51,37 +51,14 @@ const AccountModal = (props) => {
               <div>
                 <div className="accountModal-inner-box-header">
                   <div>신부 계좌</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="01057617473207" onCopy={()=>alert("복사 완료")}>
+                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="02480104459984" onCopy={()=>alert("복사 완료")}>
                 <text>복사</text></CopyToClipboard>
                 </div>
                 <div className="accountModal-inner-box-body">
-                  <div>하나(예금주: 유아름)</div>
-                  <div>01057617473207</div>
+                  <div>국민은행(예금주: 조민정)</div>
+                  <div>02480104459984</div>
                 </div>
               </div>
-              <div>
-                <div className="accountModal-inner-box-header">
-                  <div>신부 혼주</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="110008487309" onCopy={()=>alert("복사 완료")}>
-                <text>복사</text></CopyToClipboard>
-                </div>
-                <div className="accountModal-inner-box-body">
-                  <div>신한(예금주: 유봉인)</div>
-                  <div>110008487309</div>
-                </div>
-              </div>
-              <div>
-                <div className="accountModal-inner-box-header">
-                  <div>신부 혼주</div>
-                  <CopyToClipboard className="accountModal-inner-box-header-copy" text="11002173002011" onCopy={()=>alert("복사 완료")}>
-                <text>복사</text></CopyToClipboard>
-                </div>
-                <div className="accountModal-inner-box-body">
-                  <div>기업(예금주: 정규옥)</div>
-                  <div>11002173002011</div>
-                </div>
-              </div>
-              
             </div>}
             <div className="accountModal-inner-button" onClick={closeAccountModal}>
               닫기
