@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/minjeong-juhong/static/css/main.76fea8c0.css",
-    "main.js": "/minjeong-juhong/static/js/main.d9a651a9.js",
+    "main.css": "/minjeong-juhong/static/css/main.fd20f014.css",
+    "main.js": "/minjeong-juhong/static/js/main.bfeb2173.js",
     "static/media/p6.jpg": "/minjeong-juhong/static/media/p6.e7c9bee4befccd932885.jpg",
     "static/media/p15.jpg": "/minjeong-juhong/static/media/p15.7f826b844d5d6e025e7b.jpg",
     "static/media/p4.jpg": "/minjeong-juhong/static/media/p4.247408472d555010c0a9.jpg",
@@ -23,14 +23,14 @@
     "static/media/flower2.png": "/minjeong-juhong/static/media/flower2.8f9cd83002b27c361f20.png",
     "static/media/slick.svg": "/minjeong-juhong/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/minjeong-juhong/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "index.html": "/minjeong-juhong/index.html",
     "static/media/slick.ttf": "/minjeong-juhong/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/minjeong-juhong/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/minjeong-juhong/index.html",
-    "main.76fea8c0.css.map": "/minjeong-juhong/static/css/main.76fea8c0.css.map",
-    "main.d9a651a9.js.map": "/minjeong-juhong/static/js/main.d9a651a9.js.map"
+    "main.fd20f014.css.map": "/minjeong-juhong/static/css/main.fd20f014.css.map",
+    "main.bfeb2173.js.map": "/minjeong-juhong/static/js/main.bfeb2173.js.map"
   },
   "entrypoints": [
-    "static/css/main.76fea8c0.css",
-    "static/js/main.d9a651a9.js"
+    "static/css/main.fd20f014.css",
+    "static/js/main.bfeb2173.js"
   ]
 }
