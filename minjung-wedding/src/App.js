@@ -1,7 +1,7 @@
 import './app.scss';
 import './reset.css';
 import './index.css';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import AccountModal from "./accountModal";
 import map from "./img/map.jpg";
@@ -18,6 +18,18 @@ function App() {
   const closeAccountModal = () => {
     setAccountIndex(undefined);
   };
+
+  const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+  let options = { //지도를 생성할 때 필요한 기본 옵션
+	  center: new kakao.maps.LatLng(37.50748, 126.7381), //지도의 중심좌표.
+	  level: 3 //지도의 레벨(확대, 축소 정도)
+  };
+
+  let map;
+  useEffect(()=>{
+    map = new kakao.maps.Map(container, options);
+  },[])
+   //지도 생성 및 객체 리턴  
 
   return (
     <div className="App">
@@ -58,6 +70,13 @@ function App() {
         </div>
         <TextPage/>
         <PhotoPage/>
+        <div>
+          <div className="location-page-main">
+            <div className="location-page-main-bold">삼산컨벤션웨딩</div>
+            <div className="location-page-main-bold">인천 부평구 삼산동 458-1</div>
+          </div>
+          <div id="map" style={{width: "100%", height: "300px"}}></div>
+        </div>
         <motion.div className="location-page" animate={{ x: 0, opacity: 1 }}
     transition={{ type: "spring", duration: 2 }} initial={{
       x:0, y:100, opacity: 0
@@ -65,10 +84,6 @@ function App() {
       opacity: 1,
       y: 0
     }} exit={{ opacity: 0 }}>
-          <div className="location-page-main">
-            <div className="location-page-main-bold">삼산컨벤션웨딩</div>
-            <div className="location-page-main-bold">인천 부평구 삼산동 458-1</div>
-          </div>
           <div className="location-page-divider"></div>
           <div className="location-page-way">
             <div className="location-page-way-type">
