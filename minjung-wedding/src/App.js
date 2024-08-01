@@ -11,6 +11,10 @@ import flower3 from "./img/flower3.png";
 import TextPage from "./textPage";
 import PhotoPage from "./photo";
 import p1 from "./img/p1.jpg";
+import { Map, MapMarker } from "react-kakao-maps-sdk";
+import KAKAO_ICON from "./img/kakao_icon.png";
+import {CopyToClipboard} from "react-copy-to-clipboard/src";
+import { shareKakao } from "./utils/shareKakao.js";
 
 function App() {
   const [accountIndex, setAccountIndex] = useState(undefined);
@@ -19,17 +23,13 @@ function App() {
     setAccountIndex(undefined);
   };
 
-  const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-  let options = { //지도를 생성할 때 필요한 기본 옵션
-	  center: new kakao.maps.LatLng(37.50748, 126.7381), //지도의 중심좌표.
-	  level: 3 //지도의 레벨(확대, 축소 정도)
-  };
-
-  let map;
-  useEffect(()=>{
-    map = new kakao.maps.Map(container, options);
-  },[])
-   //지도 생성 및 객체 리턴  
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://developers.kakao.com/sdk/js/kakao.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => document.body.removeChild(script);
+  }, []);
 
   return (
     <div className="App">
@@ -72,10 +72,37 @@ function App() {
         <PhotoPage/>
         <div>
           <div className="location-page-main">
+            <div className="location-page-main-title">LOCATION</div>
             <div className="location-page-main-bold">삼산컨벤션웨딩</div>
-            <div className="location-page-main-bold">인천 부평구 삼산동 458-1</div>
+            <div className="location-page-main-address">인천 부평구 삼산동 458-1</div>
           </div>
-          <div id="map" style={{width: "100%", height: "300px"}}></div>
+          <Map
+        center={{ lat: 37.50748, lng: 126.7381 }}
+        style={{
+          width: '100%',
+          height: '300px'
+        }}
+        level={5}
+      >
+      
+        <MapMarker
+          style={{ border: 'tranparent' }}
+          position={{ lat: 37.50748, lng: 126.7381 }}
+        >
+        
+          <div
+            style={{
+              fontSize: '19px',
+              fontWeight: '700',
+              padding: '2px 0 3px',
+              textAlign: 'center',
+              width: '150px'
+            }}
+          >
+            삼산컨벤션웨딩
+          </div>
+        </MapMarker>
+      </Map>
         </div>
         <motion.div className="location-page" animate={{ x: 0, opacity: 1 }}
     transition={{ type: "spring", duration: 2 }} initial={{
@@ -84,7 +111,6 @@ function App() {
       opacity: 1,
       y: 0
     }} exit={{ opacity: 0 }}>
-          <div className="location-page-divider"></div>
           <div className="location-page-way">
             <div className="location-page-way-type">
               <div className="location-page-way-type-title">시내/시외노선버스 안내</div>
@@ -133,9 +159,6 @@ function App() {
             </div>
           </div>
         </motion.div>
-        <div className="map-page">
-            <img src={map} />
-          </div>
         <motion.div className="account-page"  animate={{scale: 1, opacity: 1}}
     transition={{ type: "spring", duration: 2 }} initial={{
      opacity: 0, scale: 0
@@ -162,8 +185,14 @@ function App() {
             index={accountIndex}
           />
         </motion.div>
+        <div style={{background: "teal"}}>우리라는 이름으로<br/> 시작하는 삶,<br/> 그 설렘의 순간에<br/> 소중한 분을 초대합니다.</div>
         <div className="footer">
-          ariyooWeddingCard
+          <div className="footer-sns">
+            <div className="footer-sns-kakao" onClick={() => shareKakao("https://ariyooweb.github.io/minjeong-juhong", "민정 &hearts; 주홍")}>카카오톡으로 청첩장 공유하기 <img src={KAKAO_ICON}/></div>
+            <CopyToClipboard className="footer-sns-copy" text="https://ariyooweb.github.io/minjeong-juhong">
+            <div>청첩장 링크 복사하기<i class="fa-regular fa-copy"></i></div></CopyToClipboard>
+          </div>
+          <div>by ariyoo</div>
         </div>
       </div>
     </div>
