@@ -8,7 +8,7 @@ export const shareKakao = (route, title) => { // url이 id값에 따라 변경�
       kakao.Link.sendDefault({
         objectType: "feed", // 카카오 링크 공유 여러 type들 중 feed라는 타입 -> 자세한 건 카카오에서 확인
         content: {
-          title: "민정 \U+2665 주홍",
+          title: "민정 ❤ 주홍",
           description: "2024.11.24 일요일 오후 1시 20분 삼산컨벤션웨딩", // 인자값으로 받은 title
           imageUrl: "https://ifh.cc/g/sAwh6Z.jpg",
           link: {
