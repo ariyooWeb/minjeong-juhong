@@ -4,10 +4,6 @@ import "./index.css";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import AccountModal from "./accountModal";
-import map from "./img/map.jpg";
-import flower from "./img/flower.png";
-import flower2 from "./img/flower2.png";
-import flower3 from "./img/flower3.png";
 import TextPage from "./textPage";
 import PhotoPage from "./photo";
 import p1 from "./img/p1.jpg";
@@ -175,7 +171,7 @@ function App() {
         <PhotoPage />
         <div>
           <div className="location-page-main">
-            <div className="location-page-main-title">LOCATION</div>
+            <div className="location-page-main-title">Location</div>
             <div className="location-page-main-bold">삼산컨벤션웨딩</div>
             <div className="location-page-main-address">
               인천 부평구 삼산동 458-1
