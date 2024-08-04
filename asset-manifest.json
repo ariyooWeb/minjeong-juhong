@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/minjeong-juhong/static/css/main.f7660e05.css",
-    "main.js": "/minjeong-juhong/static/js/main.9caabc85.js",
+    "main.css": "/minjeong-juhong/static/css/main.0471fb70.css",
+    "main.js": "/minjeong-juhong/static/js/main.cbdcc7eb.js",
     "static/media/p6.jpg": "/minjeong-juhong/static/media/p6.e7c9bee4befccd932885.jpg",
     "static/media/p15.jpg": "/minjeong-juhong/static/media/p15.7f826b844d5d6e025e7b.jpg",
     "static/media/p4.jpg": "/minjeong-juhong/static/media/p4.247408472d555010c0a9.jpg",
@@ -21,17 +21,18 @@
     "static/media/map.jpg": "/minjeong-juhong/static/media/map.79e0808f41069c022d77.jpg",
     "static/media/flower.png": "/minjeong-juhong/static/media/flower.fbf4d67e5a53710280c8.png",
     "static/media/flower2.png": "/minjeong-juhong/static/media/flower2.8f9cd83002b27c361f20.png",
+    "static/media/space.jpg": "/minjeong-juhong/static/media/space.9896cd7af25f6ffe7d43.jpg",
     "static/media/kakao_icon.png": "/minjeong-juhong/static/media/kakao_icon.6af80cbc763b5bf1f6ff.png",
     "static/media/slick.svg": "/minjeong-juhong/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/minjeong-juhong/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "index.html": "/minjeong-juhong/index.html",
     "static/media/slick.ttf": "/minjeong-juhong/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/minjeong-juhong/static/media/slick.295183786cd8a1389865.woff",
-    "main.f7660e05.css.map": "/minjeong-juhong/static/css/main.f7660e05.css.map",
-    "main.9caabc85.js.map": "/minjeong-juhong/static/js/main.9caabc85.js.map"
+    "main.0471fb70.css.map": "/minjeong-juhong/static/css/main.0471fb70.css.map",
+    "main.cbdcc7eb.js.map": "/minjeong-juhong/static/js/main.cbdcc7eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7660e05.css",
-    "static/js/main.9caabc85.js"
+    "static/css/main.0471fb70.css",
+    "static/js/main.cbdcc7eb.js"
   ]
 }
