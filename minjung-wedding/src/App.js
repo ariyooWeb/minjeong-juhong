@@ -304,11 +304,20 @@ function App() {
             <div className="location-page-way-type">
               <div className="location-page-way-type-title">주차장 안내</div>
               <div className="location-page-way-type-box">
-                건물 뒷편 지하 1,2층 (동시주차 1000대 가능)
+                건물 뒷편 지하 1,2층 (동시주차 1,000대 가능)
               </div>
             </div>
           </div>
         </motion.div>
+        <div className="shuttle-page">
+          <div className="shuttle-page-title"></div>
+          <div className="shuttle-page-box">
+            <div className="shuttle-page-box-number">부산70바8260</div>
+            <div className="shuttle-page-box-time">
+              예식당일 오전 6시30분 동래역 3번출구
+            </div>
+          </div>
+        </div>
         <div
           className="space-page"
           style={{ backgroundImage: "url(" + SPACE + ")" }}
@@ -349,8 +358,16 @@ function App() {
           />
         </motion.div>
         <div className="space-text-page">
-          우리라는 이름으로 시작하는 삶, <br />그 설렘의 순간에 소중한 분을
-          초대합니다.
+          <div className="space-text-page-title">Save the date</div>
+          <div className="space-text-page-date">
+            <div className="space-text-page-date-num">2024.</div>
+            <div className="space-text-page-date-num">11.</div>
+            <div className="space-text-page-date-num">24</div>
+          </div>
+          <div>
+            우리라는 이름으로 시작하는 삶, <br />그 설렘의 순간에 소중한 분을
+            초대합니다.
+          </div>
         </div>
         <div className="footer">
           <div className="footer-sns">

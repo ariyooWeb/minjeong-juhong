@@ -32,16 +32,16 @@ const Modal = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: props.initialSlide,
-    arrows: true
+    arrows: true,
   };
   return (
     props.visible && (
       <div className="modal">
         <div className="modal-inner">
-          <div className="modal-inner-close" onClick={closeModal}>
-             <img src={CLOSE} className="modal-inner-close-icon"/>
-          </div>
           <div className="modal-inner-slide">
+            <div className="modal-inner-close" onClick={closeModal}>
+              <img src={CLOSE} className="modal-inner-close-icon" />
+            </div>
             <Slider {...settings}>
               <img src={p1} />
               <img src={p2} />
