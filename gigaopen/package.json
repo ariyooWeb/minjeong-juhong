@@ -1,0 +1,15 @@
+{
+  "name": "gigaopen",
+  "version": "1.0.0",
+  "description": "giga openteam attenance",
+  "main": "index.js",
+  "keywords": [
+    "gigahitz"
+  ],
+  "author": "ariyoo, wontack",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariyooWeb/gigaopen"
+  }
+}
